@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Table</title>
+
+	<!-- Bootstrap Link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Bootstrap scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Fonts Used-->
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="/static/main.css">
+
+	<script src="{{ url_for('static', filename='main2.js') }}"></script>
+</head>
+<body>
+	<div style="padding-left:260px;padding-top:20px;">
+
+		<button type="submit" id="viewtb" class="btn btn-light btn-lg" style="padding-left:30px;padding-right:30px;color:green;background-color:#ffffff99 "data-toggle="modal" data-target="#exampleModal">
+			ViewTable
+		</button>
+		
+	</div>	
+	<br>
+
+	<div style="padding:20px;height: 820px; width:930px; background-color:#ffffff39;">
+	<div id="schedule" style="background-image: none; height: auto; background-color: rgb(216, 216, 216); transform: none;position:relative;">
+		<div id="weekDays" style="height: 29px; background-color: rgba(255, 255, 255, 0.75);">
+			<div id="leftScheduleCorner"></div>
+			<div class="weekDay" style="width:171.2px;"><p style="margin-left: 30px;">Monday</p></div>
+			<div class="weekDay" style="width:171.2px;"><p style="margin-left: 30px;">Tuesday</p></div>
+			<div class="weekDay" style="width:171.2px;"><p style="margin-left: 30px;">Wednesday</p></div>
+			<div class="weekDay" style="width:171.2px;"><p style="margin-left: 30px;">Thrusday</p></div>
+			<div class="weekDay" style="width:171.2px;"><p style="margin-left: 30px;">Friday</p></div>
+		</div>
+		<div id="hours" style="height: 750px; margin-top:29px; background-color: rgba(255, 255, 255, 0.75);position: absolute;">
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">09 AM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">10 AM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">11 AM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">12 AM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">01 PM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">02 PM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">03 PM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">04 PM</p>
+				</div>
+			</div>
+			<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">05 PM</p>
+				</div>
+			</div>
+						<div class="hour" style="height: 75px;">
+				<div class="hourText">
+				<p id="pHour" class="pHour">06 PM</p>
+				</div>
+			</div>
+		</div>
+		<div id="days" style="height: 750px; margin-left: 30px; font-size: 22px;background-color: transparent;font-family: 'Bangers', cursive;">
+			<div class="day" id="Monday" style="width: 171.2px;"></div>
+			<div class="day" id="Tuesday" style="width: 171.2px;"></div>
+			<div class="day" id="Wednesday" style="width: 171.2px;"></div>
+			<div class="day" id="Thrusday" style="width: 171.2px;"></div>
+			<div class="day" id="Friday" style="width: 171.2 x;"></div>
+		</div>
+	</div>
+	</div>
+	
+
+
+
+
+
+</body>
+</html>
